@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --heading-color: #ff0000;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+h1 {
+    color: var(--heading-color);
+}
+
+button, a {
+    background: var(--heading-color) !important;
+    color: var(--secondary-color) !important;
+    border-color: var(--heading-color) !important;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
