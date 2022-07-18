@@ -1,7 +1,7 @@
 :root {
     --primary-color: #000;
     --secondary-color: #fff;
-    --heading-color: #ff0000;
+    --common-color: #ff0000;
 }
 
 body {
@@ -10,13 +10,14 @@ body {
 }
 
 h1 {
-    color: var(--heading-color);
+    color: var(--common-color);
 }
 
 button, a {
-    background: var(--heading-color) !important;
-    color: var(--secondary-color) !important;
-    border-color: var(--heading-color) !important;
+    background: var(--common-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--common-color);
+    text-decoration: none;
 }
 
 .container {
@@ -24,4 +25,20 @@ button, a {
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+.btn-1 {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn-1:hover {
+    background: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--common-color);
+}
+
+p{
+    margin-bottom: 2rem;
 }
