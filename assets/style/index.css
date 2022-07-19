@@ -19,25 +19,34 @@ a {
     text-decoration: none !important;
     outline: none !important;
     box-shadow: none !important;
+    border: none !important;
 }
 
 a:hover {
-    color: var(--common-color) !important;
+    color: var(--common-color);
+}
+
+.mt-100 {
+    margin-top: 200px;
+}
+
+.pl-4 {
+    padding-left: 0.75rem;
 }
 
 .btn-1 {
     background: var(--common-color);
     color: var(--secondary-color);
-    border: 2px solid var(--common-color);
-    padding: 15px;
+    padding: 8px 16px;
     border-radius: 5px;
     font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 50px;
 }
 
 .btn-1:hover {
-    background: transparent;
+    background: #e0242f;
     color: var(--secondary-color);
-    border: 2px solid var(--common-color);
 }
 
 p {
@@ -46,6 +55,7 @@ p {
 
 /* Navbar */
 nav.navbar {
+    background: var(--primary-color);
     position: absolute;
     width: 100%;
     top: 0;
@@ -61,14 +71,13 @@ nav.navbar {
 
 nav.fixed-top .navbar-toggler span {
     color: var(--secondary-color);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 nav.navbar .nav-item {
     font-size: 13px;
     font-weight: 400;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 10px;
     color: var(--primary-color);
     text-transform: uppercase;
 }
@@ -86,11 +95,7 @@ nav.navbar .nav-item .nav-link {
 nav.fixed-top {
     position: fixed;
     background: var(--primary-color) none repeat scroll 0 0;
-    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
-}
-
-nav.fixed-top .navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    box-shadow: 0px 0px 18px 1px rgba(255, 255, 255, 0.1);
 }
 
 nav.fixed-top .nav-item .nav-link.active {
@@ -99,4 +104,125 @@ nav.fixed-top .nav-item .nav-link.active {
 
 .navbar-toggler-icon {
     background-image: url(../images/nav-icon.svg)
+}
+
+/* hero */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content h1 {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.375rem;
+    letter-spacing: -.02em;
+}
+
+.hero-content h1>strong {
+    color: var(--common-color);
+}
+
+.hero-content p {
+    color: #E6E6E6;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -.02em;
+    margin-top: 19.5px;
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-content-box {
+        width: 90%;
+        max-width: 335px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .hero-content h1 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: .875rem;
+        line-height: 1.25rem;
+    }
+
+    .hero-content .btn-1 {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 770px){
+    .hero-content-box {
+        width: 90%;
+        max-width: 475px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .hero-content .btn-1 {
+        margin-bottom: 50px;
+    }
+}
+
+/* Insights */
+.insights {
+    padding: 50px 6%;
+}
+
+.insight-block {
+    margin-bottom: 50px;
+}
+
+.insight-block h1 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 2.25em;
+    line-height: 1.75rem;
+    letter-spacing: -.02em;
+}
+
+.insight-block p {
+    color: #E6E6E6;
+    font-weight: 500;
+    font-size: 1.125em;
+    line-height: 1.75rem;
+    letter-spacing: -.02em;
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 768px){
+    .insight-block .underline {
+        height: 4px;
+        width: 140px;
+        background-color: var(--common-color);
+    }
+    .insight-block h1 {
+        font-size: 1.9em;
+        line-height: 1.75rem;
+    }
+    .insight-block p {
+        font-size: .875em;
+        line-height: 1.75rem;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .insights>.container>.row {
+        justify-content: space-evenly;
+    }
+    .insight-block {
+        width: 200px;
+    }
+    .insight-block .underline {
+        height: 4px;
+        width: 172px;
+        background-color: var(--common-color);
+    }
 }
