@@ -153,7 +153,7 @@
                     <div class="text-center col-12 pt-2"><p>More than 100+ Influencers</p></div>
                 </div>
                 <div class="col-12 influencer-form-btn">
-                    <button href="#influencer" class="btn-1">Fill out the form</button>
+                    <button data-bs-toggle="modal" data-bs-target="#registration" class="btn-1">Fill out the form</button>
                 </div>
                 <div class="col-12 mt-4">
                     <p class="influencer-para">Benefits after joining TTM</p>
@@ -209,11 +209,59 @@
                     <div class="text-center col-12 pt-2"><p>More than 50+ Brands</p></div>
                 </div>
                 <div class="col-12 brand-form-btn">
-                    <button href="#brand" class="btn-1">Fill out the form</button>
+                    <button data-bs-toggle="modal" data-bs-target="#registration" class="btn-1">Fill out the form</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- modal form -->
+    <div class="modal fade p-0" id="registration" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+            <div class="modal-content" >
+                <div class="modal-body">
+                    <div class="box mt-4">
+                        <div class="row m-0 p-4">
+                            <div class="col-12">
+                                <form method="post" name="google-sheet" id="login-container" class="form-row">
+                                    <div class="form-group floating-label-group col-12">
+                                        <input name="fname" type="text" class="form-control input-top" required>
+                                        <label class="label-top">First Name*</label>
+                                    </div>
+                                    <div class="form-group floating-label-group col-12">
+                                        <input name="lname" type="text" class="form-control input-top" required>
+                                        <label class="label-top">Last Name*</label>
+                                    </div>
+                                    <div class="form-group floating-label-group col-12">
+                                        <input name="email" type="email" class="form-control input-top" required>
+                                        <label class="label-top">Email*</label>
+                                    </div>
+                                    <div class="form-group floating-label-group col-12">
+                                        <input name="contact" type="text" class="form-control input-top" required>
+                                        <label class="label-top">Contact Number*</label>
+                                    </div>
+                                    <div class="form-group floating-label-group col-12">
+                                        <input name="select" list="select" class="form-control input-top" required>
+                                        <datalist id="select">
+                                            <option value="I’m an Influencer">
+                                            <option value="I’m a Brand">
+                                        </datalist>
+                                        <label class="label-top">Who you are?*</label>
+                                    </div>
+                                    <div class="form-group floating-label-group col-12">
+                                        <input name="bname" type="text" class="form-control input-top" required>
+                                        <label class="label-top">Name of your Page/Brand*</label>
+                                    </div>
+                                    <button type="submit" name="submit" class="btn-1">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -222,6 +270,24 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzZfpGT8VDc-elOA2pB4PIgmnilqu33Is76Qz-MdmlYan1hmWqNNRk-cZWYiJO0J7vtIQ/exec'
+    const form = document.forms['google-sheet']
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            if (response.ok) {
+                $('#registration').modal('hide');
+                console.log('Success:', response);
+            } else {
+                throw new Error('Something went wrong')
+            }
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
 <script src="assets/script/index.js"></script>
 
 </html>
