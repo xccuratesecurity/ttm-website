@@ -4,9 +4,19 @@
     --common-color: #ff0000;
 }
 
+::selection {
+    background: var(--primary-color);
+    color: var(--common-color);
+}
+
 body {
     background: var(--primary-color);
     color: var(--secondary-color);
+    font-family: 'DM Sans';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lovelo', sans-serif;
 }
 
 h1 {
@@ -15,6 +25,11 @@ h1 {
 
 h1>strong {
     color: var(--common-color);
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
 }
 
 button,
@@ -67,75 +82,6 @@ input:-webkit-autofill:active{
 
 p {
     margin-bottom: 2rem;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 23px 15px 15px;
-    width: 263px;
-    border: 1.5px solid #414141;
-    border-radius: 10px;
-    margin: 15px;
-    height: 290px;
-    background: transparent;
-}
-
-.card h1 {
-    font-weight: 700;
-    font-size: 1.375rem;
-    line-height: 1.75rem;
-    letter-spacing: -.02em;
-    margin: 20px 0;
-    text-align: center;
-    color: var(--secondary-color);
-}
-
-.card p {
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: -.02em;
-    text-align: center;
-    color: #E6E6E6;
-}
-
-.card .img-div {
-    width: 68px;
-    height: 68px;
-}
-
-@media only screen and (max-width: 960px) {
-    .card {
-        width: 330px;
-        padding: 20px 15px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .card {
-        width: 316px;
-        padding: 20px 15px;
-        height: auto;
-        min-height: 215px;
-    }
-
-    .card h1 {
-        font-size: 1.125rem;
-        line-height: 1.85rem;
-    }
-
-    .card p {
-        font-size: .825rem;
-        line-height: 1.5rem;
-    }
-
-    .card .img-div {
-        width: 60px;
-        height: 60px;
-    }
 }
 
 /* Navbar */
@@ -340,6 +286,38 @@ nav.fixed-top .nav-item .nav-link.active {
     letter-spacing: -.02em;
 }
 
+.work-para {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    letter-spacing: -.02em;
+    margin: 20px auto;
+    color: #E6E6E6;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+    .work-para {
+        font-size: 20px;
+        line-height: 2rem;
+    }
+}
+
+/* Why */
+
+.why {
+    padding: 70px 3%;
+    margin: 0 auto;
+}
+
+.why .why-heading {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 4rem;
+    letter-spacing: -.02em;
+}
+
 /* Influencer */
 .influencer {
     padding: 70px 3%;
@@ -355,16 +333,6 @@ nav.fixed-top .nav-item .nav-link.active {
     text-align: center;
 }
 
-.influencer-para {
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    letter-spacing: -.02em;
-    text-align: center;
-    margin: 20px auto;
-    color: #E6E6E6;
-}
-
 .influencer-block p {
     font-size: 1.25rem;
     font-weight: 500;
@@ -376,13 +344,6 @@ nav.fixed-top .nav-item .nav-link.active {
 
 .influencer-form-btn .btn-1 {
     margin-bottom: 0;
-}
-
-@media only screen and (max-width: 480px) {
-    .influencer-para {
-        font-size: 1.25rem;
-        line-height: 2rem;
-    }
 }
 
 /* brand */
@@ -500,7 +461,7 @@ nav.fixed-top .nav-item .nav-link.active {
 }
 
 .service-img img {
-    max-width: 80px;
+    max-width: 60px;
 }
 
 .service-details {
@@ -519,6 +480,13 @@ nav.fixed-top .nav-item .nav-link.active {
     margin-bottom: 15px;
     font-size: 16px;
     line-height: 1.8;
+}
+
+@media only screen and (max-width: 480px) {
+    .services-para {
+        font-size: 20px;
+        line-height: 2rem;
+    }
 }
 
 /* footer */
@@ -553,7 +521,7 @@ nav.fixed-top .nav-item .nav-link.active {
 
 .footer-links, .footer-links a {
     color: var(--secondary-color);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1rem;
     line-height: 1.5rem;
     letter-spacing: -.02em;
@@ -561,7 +529,7 @@ nav.fixed-top .nav-item .nav-link.active {
 
 .footer-copyright {
     color: #E6E6E6;
-    font-weight: 500;
+    font-weight: 600;
     font-size: .75rem;
     line-height: 1.5rem;
     letter-spacing: -.02em;
