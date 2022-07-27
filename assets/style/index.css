@@ -207,6 +207,9 @@ nav.fixed-top .nav-item .nav-link.active {
 }
 
 @media (min-width: 480px) and (max-width: 770px) {
+    .hero>.container {
+        margin-top: 170px;
+    }
     .hero-content-box {
         width: 90%;
         max-width: 475px;
