@@ -8,8 +8,6 @@
     <title>The Techie Media</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
     <link href="//db.onlinewebfonts.com/c/088f292cf151a6e496fc8cdc5441b3e3?family=Lovelo" rel="stylesheet"
         type="text/css" />
@@ -32,16 +30,19 @@
                 data-target=".navbar-collapse">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
-                        <a href="#influencer" class="nav-link close-menu">Influencer</a>
+                        <a href="influencer/" class="nav-link close-menu">Influencer</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#brand" class="nav-link close-menu">Brand</a>
+                        <a href="brand/" class="nav-link close-menu">Brand</a>
                     </li>
                     <li class="nav-item">
                         <a href="#services" class="nav-link close-menu">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link close-menu">Contact</a>
+                        <a href="career/" class="nav-link close-menu">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about/" class="nav-link close-menu">About</a>
                     </li>
                 </ul>
             </div>
@@ -55,12 +56,11 @@
             <div class="row align-items-center">
                 <div class="col-md-6 hero-content-box">
                     <div class="hero-content">
-                        <h1>Get quality<br><strong>Membership at TTM</strong> in 3 steps</h1>
-                        <p>We are a team of creative and passionate people who are dedicated to creating the best
-                            digital
-                            experience for our clients.</p>
-                        <button href="#influencer" class="btn-1">Get Started <i class="fas fa-arrow-right pl-4"></i>
-                        </button>
+                        <h1>Monetize Yourself With Our <strong>Influencer Ecosystem!</strong></h1>
+                        <div class="d-flex">
+                            <button data-bs-toggle="modal" data-bs-target="#registration" href="#influencer" class="btn-1 mr-2">I'm Influencer</button>
+                            <button data-bs-toggle="modal" data-bs-target="#registration" href="#influencer" class="btn-1 ml-2">I'm Brand</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 hero-content-box">
@@ -73,7 +73,7 @@
     </section>
 
     <!-- Insights -->
-    <section class="insights">
+    <section class="insights bg-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-6 insight-block">
@@ -119,7 +119,7 @@
     </section>
 
     <!-- Why -->
-    <section class="why">
+    <section class="why bg-2">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
@@ -128,62 +128,6 @@
                 <div class="col-12 d-flex justify-content-center">
                     <img width="1200px" class="img-fluid d-none d-md-block" src="assets/images/p-why.svg" alt="pc-why">
                     <img class="img-fluid d-block d-sm-block d-md-none" src="assets/images/m-why.svg" alt="mobile-why">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Influencer -->
-    <section class="influencer" id="influencer">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <h1 class="influencer-heading text-center">I’m an <strong>Influencer</strong></h1>
-                </div>
-                <div class="row pt-4 influencer-block">
-                    <div class="owl-carousel owl-theme d-flex justify-content-center">
-                        <div class="owl-img"><img class="img-fluid" src="assets/images/brand/1.png"></div>
-                        <div class="owl-img"><img class="img-fluid" src="assets/images/brand/2.png"></div>
-                        <div class="owl-img"><img class="img-fluid" src="assets/images/brand/3.png"></div>
-                        <div class="owl-img"><img class="img-fluid" src="assets/images/brand/4.png"></div>
-                        <div class="owl-img"><img class="img-fluid" src="assets/images/brand/5.png"></div>
-                        <div class="owl-img"><img class="img-fluid" src="assets/images/brand/6.png"></div>
-                    </div>
-                    <div class="text-center col-12 pt-4">
-                        <p>More than 100+ Influencers</p>
-                    </div>
-                </div>
-                <div class="col-12 influencer-form-btn">
-                    <button data-bs-toggle="modal" data-bs-target="#registration" class="btn-1">Fill out the
-                        form</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- brand -->
-    <section class="brand" id="brand">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <h1 class="brand-heading text-center">I’m a <strong>Brand</strong></h1>
-                </div>
-                <div class="row justify-content-center pt-4 brand-block">
-                    <div class="owl-carousel owl-theme d-flex justify-content-center">
-                        <div class="owl-img"><img class="img-fluid" src="assets/images/brand/1.png"></div>
-                        <div class="owl-img"><img class="img-fluid" src="assets/images/brand/2.png"></div>
-                        <div class="owl-img"><img class="img-fluid" src="assets/images/brand/3.png"></div>
-                        <div class="owl-img"><img class="img-fluid" src="assets/images/brand/4.png"></div>
-                        <div class="owl-img"><img class="img-fluid" src="assets/images/brand/5.png"></div>
-                        <div class="owl-img"><img class="img-fluid" src="assets/images/brand/6.png"></div>
-                    </div>
-                    <div class="text-center col-12 pt-4">
-                        <p>More than 50+ Brands</p>
-                    </div>
-                </div>
-                <div class="col-12 brand-form-btn">
-                    <button data-bs-toggle="modal" data-bs-target="#registration" class="btn-1">Fill out the
-                        form</button>
                 </div>
             </div>
         </div>
@@ -311,7 +255,7 @@
     </section>
 
     <!-- Contact -->
-    <section class="contact" id="contact">
+    <section class="contact bg-2" id="contact">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
@@ -375,7 +319,7 @@
                         </div>
                         <div class="d-flex pb-4">
                             <i class="fa fa-phone text-white"></i>
-                            <p class="text-white">+91 635100462</p>
+                            <p class="text-white">635100462</p>
                         </div>
                         <div class="d-flex">
                             <i class="fa fa-envelope text-white"></i>
@@ -412,7 +356,6 @@
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzZfpGT8VDc-elOA2pB4PIgmnilqu33Is76Qz-MdmlYan1hmWqNNRk-cZWYiJO0J7vtIQ/exec'

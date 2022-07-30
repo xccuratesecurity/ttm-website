@@ -2,6 +2,7 @@
     --primary-color: #000;
     --secondary-color: #fff;
     --common-color: #ff0000;
+    --dark-grey: rgb(25, 25, 25);
 }
 
 ::selection {
@@ -13,6 +14,10 @@ body {
     background: var(--primary-color);
     color: var(--secondary-color);
     font-family: 'DM Sans';
+}
+
+.bg-2 {
+    background: var(--dark-grey);
 }
 
 .owl-nav {
@@ -83,6 +88,14 @@ a:hover {
     margin-bottom: 2rem;
 }
 
+.mr-2 {
+    margin-right: 10px
+}
+
+.ml-2 {
+    margin-left: 10px;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -98,7 +111,6 @@ input:-webkit-autofill:active {
     border-radius: 5px;
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 50px;
 }
 
 .btn-1:hover {
@@ -246,10 +258,6 @@ nav.fixed-top .nav-item .nav-link.active {
     padding: 50px 6%;
 }
 
-.insight-block {
-    margin-bottom: 50px;
-}
-
 .insight-block h1 {
     color: var(--secondary-color);
     font-weight: 700;
@@ -348,63 +356,6 @@ nav.fixed-top .nav-item .nav-link.active {
     letter-spacing: -.02em;
 }
 
-/* Influencer */
-.influencer {
-    padding: 70px 3%;
-    margin: 0 auto;
-}
-
-.influencer .influencer-heading {
-    color: var(--secondary-color);
-    font-weight: 500;
-    font-size: 2.25rem;
-    line-height: 3.2rem;
-    letter-spacing: -.02em;
-    text-align: center;
-}
-
-.influencer-block p {
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-.influencer-form-btn {
-    display: contents;
-}
-
-.influencer-form-btn .btn-1 {
-    margin-bottom: 0;
-}
-
-/* brand */
-
-.brand {
-    padding: 70px 3%;
-    margin: 0 auto;
-}
-
-.brand .brand-heading {
-    color: var(--secondary-color);
-    font-weight: 500;
-    font-size: 2.25rem;
-    line-height: 3.2rem;
-    letter-spacing: -.02em;
-    text-align: center;
-}
-
-.brand-block p {
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-.brand-form-btn {
-    display: contents;
-}
-
-.brand-form-btn .btn-1 {
-    margin-bottom: 0;
-}
-
 /* REGISTRATION MODAL Form */
 #registration .modal-content {
     background: transparent !important;
@@ -413,7 +364,7 @@ nav.fixed-top .nav-item .nav-link.active {
 
 .box {
     margin-bottom: 30px;
-    background: var(--primary-color);
+    background: var(--dark-grey);
     box-shadow: 20px 20px 20px -20px rgba(225, 225, 225, 0.13);
     border-radius: 8px;
 }
@@ -433,7 +384,7 @@ nav.fixed-top .nav-item .nav-link.active {
     top: -9px;
     font-size: 12px;
     white-space: nowrap;
-    background: var(--primary-color);
+    background: var(--dark-grey);
     text-align: left;
     left: 15px;
     padding: 0 5px;
@@ -503,8 +454,11 @@ nav.fixed-top .nav-item .nav-link.active {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.1px;
-    text-decoration: underline;
     margin-bottom: 10px;
+}
+
+.service-detail-heading::first-letter {
+    font-size: 25px;
 }
 
 .service-detail-para {
