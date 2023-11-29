@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 749.06 271.19" width="110" height="50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff2a2a;
+      }
+
+      .cls-2 {
+        font-size: 70.56px;
+        font-family: Poppins-SemiBold, Poppins;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <rect class="cls-1" x="269.74" y="-10.18" width="82.55" height="289.56" rx="41.28" transform="translate(626.1 9.85) rotate(135)" />
+      <path class="cls-1" d="M235.05,239a41.25,41.25,0,0,1-58.37,0L121.1,183.39a22.89,22.89,0,0,0-2.6-2.61,22.51,22.51,0,0,0-36.75,20.95c0,.29.1.57.16.86a41.27,41.27,0,1,1-40.65-34.08,41.69,41.69,0,0,1,5.13.33,22,22,0,0,0,5.57,1.1c.51,0,1,.05,1.49.05a22.51,22.51,0,0,0,17.18-37.07A19.51,19.51,0,0,0,68,130.31L30.3,92.59A41.28,41.28,0,0,1,88.68,34.22L235.05,180.61A41.25,41.25,0,0,1,235.05,239Z" />
+      <text class="cls-2" transform="translate(509.1 60.01)">the <tspan x="0" y="84.67">techie </tspan>
+        <tspan x="0" y="169.34">media</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
